@@ -6,6 +6,9 @@ leverages OS X virtualization technology) on OS X.
 
 This is due to the volume share. Using Symfony in a container without sharing volume is very fast (~20ms in dev mode).
 
+*Edit:* The example is now much faster since the `cache`, `logs` and `vendor` (biggest win with this one)
+directories have been moved outside the shared directory.
+
 ## Install
 
     docker build -t sf-test .
