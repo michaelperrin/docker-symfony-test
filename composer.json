@@ -60,5 +60,8 @@
         "incenteev-parameters": {
             "file": "app/config/parameters.yml"
         }
+    },
+    "config": {
+        "vendor-dir": "/dev/shm/symfony_docker_test/vendor"
     }
 }
