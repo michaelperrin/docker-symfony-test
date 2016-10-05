@@ -28,6 +28,10 @@ You can switch to the `non-shared-vendor` branch to make tests with `cache`, `lo
 Benchmarks results from this command in Symfony `prod` environment:
 
     ab -n 100 -r 127.0.0.1:8080
+ 
+ or:
+ 
+    ab -n 100 -r http://127.0.0.1:8080/
 
 |                                                         | Docker 1.11.1-beta11 | Docker 1.11.1-beta13 |
 |---------------------------------------------------------|----------------------|----------------------|
