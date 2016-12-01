@@ -28,13 +28,13 @@ You can switch to the `non-shared-vendor` branch to make tests with `cache`, `lo
 Benchmarks results from this command in Symfony `prod` environment:
 
     ab -n 100 -r 127.0.0.1:8080
- 
+
  or:
- 
+
     ab -n 100 -r http://127.0.0.1:8080/
 
-|                                                         | Docker 1.11.1-beta11 | Docker 1.11.1-beta13 |
-|---------------------------------------------------------|----------------------|----------------------|
-| Shared (the default) – *shared-vendor-and-cache branch* | 210 seconds          | *26.9 seconds*       |
-| Not shared: cache, logs and vendors – *master branch*   | 11.9 seconds         | *5.6 seconds*        |
-| Not shared: vendors – *non-shared-vendor branch*        | 10.9 seconds         | *not tested yet*     |
+|                                                         | Docker 1.11.1-beta11 | Docker 1.11.1-beta13 | Docker 1.13.0-rc2-beta31 |
+|---------------------------------------------------------|----------------------|----------------------|--------------------------|
+| Shared (the default) – *shared-vendor-and-cache* branch | 210 seconds          | 26.9 seconds         | 26.5 seconds             |
+| Not shared: cache, logs and vendors – *master* branch   | 11.9 seconds         | 5.6 seconds          | 5.7 seconds              |
+| Not shared: vendors – *non-shared-vendor* branch        | 10.9 seconds         | not tested yet       | 6.9 seconds              |
